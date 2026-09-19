@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drew Nicholas — actor, model, and creative portfolio.">
+  <title>Drew Nicholas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark logo-monogram" href="#top" aria-label="Drew Nicholas home">
+      <span class="logo-d">D</span><span class="logo-n">N</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero" aria-label="Drew Nicholas">
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="assets/images/hero.jpg" alt="Drew Nicholas portrait">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-name" aria-label="Drew Nicholas">
+        <span class="hero-initial">D</span><span class="hero-small">rew</span>
+        <span class="hero-initial second">N</span><span class="hero-small">icholas</span>
+      </div>
+      <div class="scroll-cue"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <div class="section-intro section-shell">
+        <p class="eyebrow">SELECTED HEADSHOTS</p>
+        <p class="section-note">A focused collection of current looks. The site is intentionally kept compact so the photography stays front and center.</p>
+      </div>
+
+      <div class="gallery-grid section-shell">
+        <button class="tile tile-large" data-lightbox="assets/images/headshot-01.jpg" aria-label="Open headshot 01">
+          <img src="assets/images/headshot-01.jpg" alt="Drew Nicholas headshot 01">
+          <span class="tile-label">01 / PORTRAIT</span>
+        </button>
+        <button class="tile" data-lightbox="assets/images/headshot-02.jpg" aria-label="Open headshot 02"><img src="assets/images/headshot-02.jpg" alt="Drew Nicholas headshot 02" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">02</span><small>ADD HEADSHOT</small></button>
+        <button class="tile" data-lightbox="assets/images/headshot-03.jpg" aria-label="Open headshot 03"><img src="assets/images/headshot-03.jpg" alt="Drew Nicholas headshot 03" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">03</span><small>ADD HEADSHOT</small></button>
+        <button class="tile tile-wide" data-lightbox="assets/images/headshot-04.jpg" aria-label="Open headshot 04"><img src="assets/images/headshot-04.jpg" alt="Drew Nicholas headshot 04" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">04</span><small>ADD HEADSHOT</small></button>
+        <button class="tile" data-lightbox="assets/images/headshot-05.jpg" aria-label="Open headshot 05"><img src="assets/images/headshot-05.jpg" alt="Drew Nicholas headshot 05" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">05</span><small>ADD HEADSHOT</small></button>
+        <button class="tile" data-lightbox="assets/images/headshot-06.jpg" aria-label="Open headshot 06"><img src="assets/images/headshot-06.jpg" alt="Drew Nicholas headshot 06" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">06</span><small>ADD HEADSHOT</small></button>
+        <button class="tile" data-lightbox="assets/images/headshot-07.jpg" aria-label="Open headshot 07"><img src="assets/images/headshot-07.jpg" alt="Drew Nicholas headshot 07" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">07</span><small>ADD HEADSHOT</small></button>
+        <button class="tile tile-wide" data-lightbox="assets/images/headshot-08.jpg" aria-label="Open headshot 08"><img src="assets/images/headshot-08.jpg" alt="Drew Nicholas headshot 08" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">08</span><small>ADD HEADSHOT</small></button>
+        <button class="tile" data-lightbox="assets/images/headshot-09.jpg" aria-label="Open headshot 09"><img src="assets/images/headshot-09.jpg" alt="Drew Nicholas headshot 09" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">09</span><small>ADD HEADSHOT</small></button>
+        <button class="tile" data-lightbox="assets/images/headshot-10.jpg" aria-label="Open headshot 10"><img src="assets/images/headshot-10.jpg" alt="Drew Nicholas headshot 10" onerror="this.parentElement.classList.add('placeholder');this.remove()"><span class="slot-number">10</span><small>ADD HEADSHOT</small></button>
+      </div>
+    </section>
+
+    <section id="about" class="content-section about-section">
+      <div class="content-shell">
+        <div class="section-label"><p class="eyebrow">ABOUT</p></div>
+        <div class="section-body">
+          <p class="about-lead">Actor · Model · Creative</p>
+          <p class="body-copy">This is the place for a short, confident biography—just enough to establish who you are, the kind of work you do, and what you want people to remember. We can replace this with your final wording when you're ready.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+      <div class="content-shell">
+        <div class="section-label"><p class="eyebrow">CONTACT</p></div>
+        <div class="section-body">
+          <p class="contact-lead">For representation, projects, collaborations, or general inquiries.</p>
+          <a class="email-link" href="mailto:hello@example.com">hello@example.com ↗</a>
+          <div class="social-links" aria-label="Social and professional links">
+            <a href="#top" title="Instagram — replace link">Instagram</a>
+            <a href="#top" title="IMDb — replace link">IMDb</a>
+            <a href="#top" title="Actors Access — replace link">Actors Access</a>
+            <a href="#top" title="LinkedIn — replace link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <span>© 2026 Drew Nicholas</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">Close</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
