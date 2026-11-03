@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(box){
     const img=box.querySelector('img');
     const close=()=>{box.classList.remove('open');box.setAttribute('aria-hidden','true');img.src='';};
-    document.querySelectorAll('.tile[data-lightbox]').forEach(tile=>tile.addEventListener('click',()=>{
+    document.querySelectorAll('[data-lightbox]').forEach(tile=>tile.addEventListener('click',()=>{
       if(tile.classList.contains('placeholder')) return;
       img.src=tile.dataset.lightbox;
-      img.alt=tile.querySelector('img')?.alt||'';
+      img.alt=tile.dataset.alt||tile.querySelector('img')?.alt||'';
       box.classList.add('open');box.setAttribute('aria-hidden','false');
     }));
     box.querySelector('.lightbox-close').addEventListener('click',close);
